@@ -1,0 +1,18 @@
+<div>
+  <div class="subsection" [hidden]="startOne">
+  <h1>Start</h1>
+
+  <p>Configuration starts by selecting a country. Omnidroid ID's are organized on a per-country basis.</p>
+    <label for="country">Please select your country from the list and click "next".</label>
+    <select class="start-toconfigure" ng-model="selectedCountry" name="country">
+      <option ng-options="Country in countries" ng-model="selectedCountry" value="{{Country.country}}">{{Country.countryname}}</option>
+    </select>
+  <br />
+  <p>{{selectedCountry.country}} is the 2-letter abbreviation of: {{selectedCountry.countryname}}, the country matching your selection.</p>
+
+  <button class="btn-primary" (click)=RevNxtOne>Back</button>
+  <button class="btn-primary" (click)=NxtOne>Next</button>
+  </div>
+  <div class="subsection"></div>
+  <div class="subsection"></div>
+</div>
