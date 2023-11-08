@@ -1,0 +1,16 @@
+<div class="section" [hidden]="mainIndex">
+  <h1>Welcome to Omnidroid</h1>
+  <p>Omnidroid Start is used to create and configure new Omnidroid ID's.</p>
+  <br />
+  <p>Start a new configuration, or continue with your existing configuration.</p>
+  <button (click)="nxtStart()">Start</button>
+  <button (click)="nxtContinue()">Continue</button>
+  </div>
+<div class="section" [hidden]="mainCreate">
+  <main-create> </main-create>
+  <button (click)="nxtRevert()">Back to Index</button>
+</div>
+<div class="section" [hidden]="mainContinue">
+  <main-continue> </main-continue>
+  <button (click)="nxtRevert()">Back to Index</button>
+</div>
